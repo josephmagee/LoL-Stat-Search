@@ -1,0 +1,16 @@
+<div class="container">
+    <form action="/search" method="get" id="search">
+        <label for="summoner">Summoner Name</label>
+        <input type="text" id="summoner" name="summoner" placeholder="Dyrus">
+        <button class="button" type="submit" form="search" value="Submit" style="margin-top:10px; margin: 0 auto; display:block;"">Submit</button>
+    </form>
+</div>
+<!-- TODO, add validation on empty strings and null values -->
+<div class="container">
+    <div class="row">
+        <div class="column">Summoner Search: {{info.name}}</div>
+        <div class="column">Most Played: {{info.champName}}</div>
+        <div class="column">Times Played: {{info.timesPlayed}}</div>
+        <div class="column">Summoner ID: {{info.id}}</div>
+    </div>
+</div>
