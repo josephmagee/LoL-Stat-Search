@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/josephmagee/LoL-Stat-Search/issues"
   },
-  "homepage": "https://github.com/josephmagee/LoL-Stat-Search#readme"
+  "homepage": "https://github.com/josephmagee/LoL-Stat-Search#readme",
+  "dependencies": {
+    "async": "^2.0.1",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "fs": "0.0.2",
+    "request": "^2.74.0",
+    "require": "^2.4.20"
+  }
 }
