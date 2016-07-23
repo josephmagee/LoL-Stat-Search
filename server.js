@@ -8,8 +8,7 @@ var fs = require('fs');
  * get your own config file you crazy kids, and stay off my lawn. configuration.json holds your API key from Riot.
  * your API key can be found at https://developer.riotgames.com/ after logging into your league of legends account.
  */
-var configuration = JSON.parse(
-    fs.readFileSync('./data/configuration.json'));
+var configuration = process.env.apikey;
 
 app.engine('handlebars', exphbs({
     defaultLayout: 'main'
@@ -23,7 +22,7 @@ app.get('/search', function(req, res) {
     var path = './data/logs.json';
     var obj = JSON.parse(fs.readFileSync(path, 'utf8'));
     var data = {};
-    var api_key = configuration.apikey;
+    var api_key = configuration;
     var s_toSearch = req.query.summoner.toLowerCase().replace(/ /g, '');
 
     async.waterfall([
