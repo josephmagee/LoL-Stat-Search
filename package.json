@@ -1,0 +1,20 @@
+{
+  "name": "lolstatsearch",
+  "version": "1.0.0",
+  "description": "League of Legends Stat Search",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephmagee/LoL-Stat-Search.git"
+  },
+  "author": "Joe Magee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josephmagee/LoL-Stat-Search/issues"
+  },
+  "homepage": "https://github.com/josephmagee/LoL-Stat-Search#readme"
+}
